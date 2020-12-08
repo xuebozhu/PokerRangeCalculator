@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="772.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Reset">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#resetAll" text="Reset All" />
+                  <MenuItem mnemonicParsing="false" onAction="#resetBoard" text="Reset Board" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="602.0" style="-fx-background-color: saddlebrown;" BorderPane.alignment="CENTER">
+         <children>
+            <Ellipse fill="#2e5f27" layoutX="360.0" layoutY="243.0" radiusX="359.0" radiusY="193.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fx:id="P6Card1" fitHeight="78.0" fitWidth="64.0" layoutX="14.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P5Card2" fitHeight="78.0" fitWidth="64.0" layoutX="205.0" layoutY="294.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P6Card2" fitHeight="78.0" fitWidth="64.0" layoutX="75.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P1Card1" fitHeight="78.0" fitWidth="64.0" layoutX="145.0" layoutY="36.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P1Card2" fitHeight="78.0" fitWidth="64.0" layoutX="205.0" layoutY="36.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P5Card1" fitHeight="78.0" fitWidth="64.0" layoutX="145.0" layoutY="294.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P3Card2" fitHeight="78.0" fitWidth="64.0" layoutX="651.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P3Card1" fitHeight="78.0" fitWidth="64.0" layoutX="591.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P4Card2" fitHeight="78.0" fitWidth="64.0" layoutX="537.0" layoutY="294.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P4Card1" fitHeight="78.0" fitWidth="64.0" layoutX="474.0" layoutY="294.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P2Card2" fitHeight="78.0" fitWidth="64.0" layoutX="537.0" layoutY="36.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="P2Card1" fitHeight="78.0" fitWidth="64.0" layoutX="474.0" layoutY="36.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblPlayer4" layoutX="484.0" layoutY="381.0" style="-fx-background-color: white;" text="Player 4" />
+            <Label fx:id="lblPlayer5" layoutX="154.0" layoutY="381.0" style="-fx-background-color: white;" text="Player 5" />
+            <Label fx:id="lblPlayer3" layoutX="598.0" layoutY="253.0" style="-fx-background-color: white;" text="Player 3" />
+            <Label fx:id="lblPlayer2" layoutX="483.0" layoutY="122.0" style="-fx-background-color: white;" text="Player 2" />
+            <Label fx:id="lblPlayer6" layoutX="22.0" layoutY="253.0" style="-fx-background-color: white;" text="Player 6" />
+            <Label fx:id="lblPlayer1" layoutX="154.0" layoutY="122.0" style="-fx-background-color: white;" text="Player 1" />
+            <Button layoutX="295.0" layoutY="277.0" mnemonicParsing="false" onAction="#calcularEquity" prefHeight="56.0" prefWidth="146.0" text="Calcular" />
+            <ImageView fx:id="BoardCard1" fitHeight="78.0" fitWidth="64.0" layoutX="207.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BoardCard2" fitHeight="78.0" fitWidth="64.0" layoutX="268.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BoardCard3" fitHeight="78.0" fitWidth="64.0" layoutX="333.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BoardCard4" disable="true" fitHeight="78.0" fitWidth="64.0" layoutX="397.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="BoardCard5" disable="true" fitHeight="78.0" fitWidth="64.0" layoutX="456.0" layoutY="169.0" onMouseClicked="#seleccionaCarta" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/00.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="204.0" layoutY="161.0" prefHeight="8.0" prefWidth="182.0" />
+            <Label layoutX="277.0" layoutY="143.0" text="Flop" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="405.0" layoutY="143.0" text="Turn" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="464.0" layoutY="143.0" text="River" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnRandom" layoutX="338.0" layoutY="341.0" mnemonicParsing="false" onAction="#seleccionarRandom" text="Random" />
+            <Button fx:id="fold5" layoutX="214.0" layoutY="377.0" mnemonicParsing="false" onAction="#playerFold" text="Fold" />
+            <Button fx:id="fold6" layoutX="82.0" layoutY="249.0" mnemonicParsing="false" onAction="#playerFold" text="Fold" />
+            <Button fx:id="fold1" layoutX="212.0" layoutY="118.0" mnemonicParsing="false" onAction="#playerFold" text="Fold" />
+            <Button fx:id="fold2" layoutX="544.0" layoutY="118.0" mnemonicParsing="false" onAction="#playerFold" text="Fold" />
+            <Button fx:id="fold3" layoutX="658.0" layoutY="249.0" mnemonicParsing="false" onAction="#playerFold" text="Fold" />
+            <Button fx:id="fold4" layoutX="544.0" layoutY="377.0" mnemonicParsing="false" onAction="#playerFold" text="Fold" />
+            <Button layoutX="313.0" layoutY="377.0" mnemonicParsing="false" onAction="#todasRandom" text="Random hands" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <GridPane fx:id="gridPaneMazo" prefHeight="291.0" prefWidth="718.0" style="-fx-background-color: saddlebrown;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="Ks" fitHeight="70.0" fitWidth="62.0" layoutX="10.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../imagenes/Ks.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Qs" fitHeight="70.0" fitWidth="62.0" layoutX="65.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../../imagenes/Qs.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Js" fitHeight="70.0" fitWidth="62.0" layoutX="120.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../../imagenes/Js.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Ts" fitHeight="70.0" fitWidth="62.0" layoutX="175.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../../imagenes/Ts.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Ns" fitHeight="70.0" fitWidth="62.0" layoutX="230.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../../imagenes/9s.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Os" fitHeight="70.0" fitWidth="62.0" layoutX="285.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../../imagenes/8s.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Ss" fitHeight="70.0" fitWidth="62.0" layoutX="340.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
+               <image>
+                  <Image url="@../../imagenes/7s.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Xs" fitHeight="70.0" fitWidth="62.0" layoutX="395.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8">
+               <image>
+                  <Image url="@../../imagenes/6s.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Cs" fitHeight="70.0" fitWidth="62.0" layoutX="450.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9">
+               <image>
+                  <Image url="@../../imagenes/5s.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Fs" fitHeight="70.0" fitWidth="62.0" layoutX="505.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10">
+               <image>
+                  <Image url="@../../imagenes/4s.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Es" fitHeight="70.0" fitWidth="62.0" layoutX="560.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11">
+               <image>
+                  <Image url="@../../imagenes/3s.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Ds" fitHeight="70.0" fitWidth="62.0" layoutX="616.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12">
+               <image>
+                  <Image url="@../../imagenes/2s.png" />
+               </image>
+            </ImageView>
+            <ImageView id="Ac" fx:id="Ac" fitHeight="70.0" fitWidth="62.0" layoutX="10.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/Ac.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Kc" fitHeight="70.0" fitWidth="62.0" layoutX="65.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/Kc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Qc" fitHeight="70.0" fitWidth="62.0" layoutX="120.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/Qc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Jc" fitHeight="70.0" fitWidth="62.0" layoutX="175.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/Jc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tc" fitHeight="70.0" fitWidth="62.0" layoutX="230.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/Tc.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Nc" fitHeight="70.0" fitWidth="62.0" layoutX="285.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/9c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Oc" fitHeight="70.0" fitWidth="62.0" layoutX="340.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/8c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Sc" fitHeight="70.0" fitWidth="62.0" layoutX="395.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/7c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Xc" fitHeight="70.0" fitWidth="62.0" layoutX="450.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/6c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Cc" fitHeight="70.0" fitWidth="62.0" layoutX="505.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/5c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Fc" fitHeight="70.0" fitWidth="62.0" layoutX="560.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/4c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Ec" fitHeight="70.0" fitWidth="62.0" layoutX="616.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/3c.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Dc" fitHeight="70.0" fitWidth="62.0" layoutX="672.0" layoutY="12.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../imagenes/2c.png" />
+               </image>
+            </ImageView>
+            <ImageView id="Ah" fx:id="Ah" fitHeight="70.0" fitWidth="62.0" layoutX="10.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/Ah.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Kh" fitHeight="70.0" fitWidth="62.0" layoutX="65.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/Kh.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Qh" fitHeight="70.0" fitWidth="62.0" layoutX="120.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/Qh.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Jh" fitHeight="70.0" fitWidth="62.0" layoutX="175.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/Jh.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Th" fitHeight="70.0" fitWidth="62.0" layoutX="230.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/Th.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Nh" fitHeight="70.0" fitWidth="62.0" layoutX="285.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/9h.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Oh" fitHeight="70.0" fitWidth="62.0" layoutX="340.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/8h.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Sh" fitHeight="70.0" fitWidth="62.0" layoutX="395.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/7h.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Xh" fitHeight="70.0" fitWidth="62.0" layoutX="450.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/6h.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Ch" fitHeight="70.0" fitWidth="62.0" layoutX="505.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/5h.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Fh" fitHeight="70.0" fitWidth="62.0" layoutX="560.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/4h.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Eh" fitHeight="70.0" fitWidth="62.0" layoutX="616.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/3h.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Dh" fitHeight="70.0" fitWidth="62.0" layoutX="672.0" layoutY="85.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../imagenes/2h.png" />
+               </image>
+            </ImageView>
+            <ImageView id="Ad" fx:id="Ad" fitHeight="70.0" fitWidth="62.0" layoutX="10.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/Ad.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Kd" fitHeight="70.0" fitWidth="62.0" layoutX="65.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/Kd.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Qd" fitHeight="70.0" fitWidth="62.0" layoutX="120.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/Qd.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Jd" fitHeight="70.0" fitWidth="62.0" layoutX="175.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/Jd.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Td" fitHeight="70.0" fitWidth="62.0" layoutX="230.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/Td.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Nd" fitHeight="70.0" fitWidth="62.0" layoutX="295.0" layoutY="95.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/9d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Od" fitHeight="70.0" fitWidth="62.0" layoutX="340.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/8d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Sd" fitHeight="70.0" fitWidth="62.0" layoutX="395.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/7d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Xd" fitHeight="70.0" fitWidth="62.0" layoutX="450.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/6d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Cd" fitHeight="70.0" fitWidth="62.0" layoutX="505.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/5d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Fd" fitHeight="70.0" fitWidth="62.0" layoutX="560.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/4d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Ed" fitHeight="70.0" fitWidth="62.0" layoutX="616.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/3d.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Dd" fitHeight="70.0" fitWidth="62.0" layoutX="672.0" layoutY="158.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../imagenes/2d.png" />
+               </image>
+            </ImageView>
+            <ImageView id="As" fx:id="As" fitHeight="70.0" fitWidth="62.0" onMouseClicked="#seleccionarCartaMazo" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/As.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
